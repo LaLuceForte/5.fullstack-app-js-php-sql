@@ -1,0 +1,14 @@
+
+
+//устанаваливаем кодировку
+$connect->set_charset("utf8");
+
+// подключаемся к БД
+//$data = mysqli_query($connect, "SELECT * FROM users");
+//$data = mysqli_fetch_all($data);
+
+//$mysqli = new mysqli('localhost', 'root', '', 'online-store');
+
+  <script type="text/javascript">let jArrayUsers = <?php echo json_encode($users); ?>;</script>
+      <script type="text/javascript">let jArray = <?php echo json_encode($components); ?>;</script>
+

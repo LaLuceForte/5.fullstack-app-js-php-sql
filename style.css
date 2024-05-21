@@ -1,0 +1,77 @@
+.sign-in{
+    margin-left: auto;
+    width: 40px;
+    cursor: pointer;
+    margin-right: 2em;
+    margin-top: 2em;
+    background-color:  rgba(176, 224, 230, 0);
+    border: none;
+}
+
+
+.main {
+    display: flex;
+    height: 97vh;
+    background-color: rgba(176, 224, 230, 0.589);
+    flex-direction: column;
+}
+
+.welcome-page {
+    font-family: cursive;
+    margin: 10em auto;
+}
+
+.title {
+    opacity: 0;
+    transition: 2s;
+    animation: show-title 3s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show-title {
+    0% {
+        opacity: 0;
+        font-size: 50px;
+    }
+
+    100% {
+        opacity: 1;
+        font-size: 100px;
+    }
+}
+
+.description {
+    margin: 1em auto;
+    font-size: 30px;
+    color: rgba(0, 0, 0, .4);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0;
+    transition: .5s ease-in;
+    animation: show-description 3s 1;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    /* Задержка перед началом */
+}
+
+@keyframes show-description {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+
+img{
+    max-width: 100%;
+    opacity: .6;
+}
+
+img:hover{
+    opacity: 1;
+}
+
